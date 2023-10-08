@@ -1,7 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
-    "height": 400,
+    "width": "container",
     "title": "Happiness Score vs GDP Per Capita in 2023",
     "data": {
         "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/WHR_2023.csv"
