@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": "container"
+    "width": "container",
     "title": "World Happiness 2023",
     "data": {
         "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/js/ne_110m.topojson",
