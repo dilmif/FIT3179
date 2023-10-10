@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.1.0.json",
+  "title": "World Happiness Top 10 Country Rankings 2015-2023",
+  "width": "container",
+  "data": {
+    "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/top10happinessscore.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "sort": [{"field": "happiness_score", "order": "descending"}],
+      "window": [{"op": "rank", "as": "rank"}],
+      "groupby": ["year"]
+    },
+    {
+      "lookup": "country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/flagicons.csv"
+        },
+        "key": "Country",
+        "fields": ["ImageURL"]
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"],
+      "title": null,
+      "axis": {
+        "grid": true,
+        "domain": false,
+        "ticks": false,
+        "offset": 20,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "sort": "descending",
+      "scale": {"domainMin": 1},
+      "title": "Rank",
+      "axis": {"grid": false, "domain": false, "ticks": false, "offset": -18}
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal", "title": "Country"},
+      {"field": "happiness_score", "type": "quantitative", "title": "Happiness Score"},
+      {"field": "rank", "type": "quantitative", "title": "Rank"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "size": 5,
+        "point": {
+          "filled": false,
+          "fill": "white",
+          "size": 40,
+          "strokeWidth": 1
+        }
+      },
+      "encoding": {"color": {"field": "country", "title": "Country"}, "opacity": {"value": 0.8}}
+    },
+    {
+      "mark": {"type": "image", "width": 40, "height": 20, "tooltip": true},
+      "transform": [{"filter": "datum.year == 2023"}],
+      "encoding": {"url": {"field": "ImageURL", "type": "nominal"}}
+    }
+  ]
+}
