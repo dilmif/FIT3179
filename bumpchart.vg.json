@@ -63,7 +63,20 @@
           "strokeWidth": 1
         }
       },
-      "encoding": {"color": {"field": "country", "title": "Country"}, "opacity": {"value": 0.8}}
+      "encoding": {"color": {"field": "country", "title": "Country", "scale": {
+                        "domain": [
+                            "Finland",
+                            "Denmark",
+                            "Iceland",
+                            "Netherlands",
+                            "Sweden",
+                            "Norway",
+                            "Switzerland",
+                            "New Zealand",
+                            "Australia",
+                            "Canada"
+                        ]
+                    }}, "opacity": {"value": 0.8}}
     },
     {
       "mark": {"type": "image", "width": 40, "height": 20, "tooltip": true},
