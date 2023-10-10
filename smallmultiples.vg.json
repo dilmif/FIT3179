@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Histograms With Various Key Indicators Related to Happiness in 2023",
+    "repeat": [
+        "happiness_score",
+        "gdp_per_capita",
+        "freedom_to_make_life_choices",
+        "social_support",
+        "healthy_life_expectancy",
+        "generosity"
+    ],
+    "columns": 3,
+    "spec": {
+        "projection": {
+            "type": "equirectangular",
+            "center": [
+                144.4,
+                -37.6
+            ],
+            "scale": 21000
+        },
+        "width": 300,
+        "height": 300,
+        "layer": [
+            {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/WHR_2023.csv",
+                    "format": {}
+                },
+                "mark": "bar",
+                "encoding": {
+                    "x": {
+                        "bin": true,
+                        "field": {"repeat": "repeat"}
+                    },
+                    "y": {
+                        "aggregate": "count",
+                        "title": "Count of Countries"
+                    }
+                }
+            },
+            {
+                "data": {
+                "values": [
+                {
+                "happiness_score": "Happiness Score",
+                "gdp_per_capita": "GDP Per Capita",
+                "freedom_to_make_life_choices": "Freedom to Make Life Choices",
+                "social_support": "Social Support",
+                "healthy_life_expectancy": "Healthy Life Expectancy",
+                "generosity": "Generosity"
+                }
+                ]
+                },
+                "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "bottom",
+                "x": "width",
+                "y": 0
+                },
+                "encoding": {"text": {"field": {"repeat": "repeat"}}}
+                }
+        ]
+    }
+}
