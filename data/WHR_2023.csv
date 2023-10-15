@@ -2,15 +2,15 @@ Country,Continent,Population,Area,region,happiness_score,gdp_per_capita,social_s
 Finland,Europe,5541017,303963,Western Europe,7.804,1.888,1.585,0.535,0.772,0.126,0.535
 Denmark,Europe,5822863,42925,Western Europe,7.586,1.949,1.548,0.537,0.734,0.208,0.525
 Iceland,Europe,372520,103004,Western Europe,7.53,1.926,1.62,0.559,0.738,0.25,0.187
-Israel,Asia,9364000,20770,Middle East and North Africa,7.473,1.833,1.521,0.577,0.569,0.124,0.158
+Israel,Asia and Oceania,9364000,20770,Middle East and North Africa,7.473,1.833,1.521,0.577,0.569,0.124,0.158
 Netherlands,Europe,17590672,41543,Western Europe,7.403,1.942,1.488,0.545,0.672,0.251,0.394
 Sweden,Europe,10415811,447425,Western Europe,7.395,1.921,1.51,0.562,0.754,0.225,0.52
 Norway,Europe,5408320,385207,Western Europe,7.315,1.994,1.521,0.544,0.752,0.212,0.463
 Switzerland,Europe,8738791,41285,Western Europe,7.24,2.022,1.463,0.582,0.678,0.151,0.475
 Luxembourg,Europe,640064,2586,Western Europe,7.228,2.2,1.357,0.549,0.71,0.149,0.418
-New Zealand,Oceania,5122600,268021,North America and ANZ,7.123,1.842,1.544,0.513,0.672,0.23,0.471
+New Zealand,Asia and Oceania and Oceania,5122600,268021,North America and ANZ,7.123,1.842,1.544,0.513,0.672,0.23,0.471
 Austria,Europe,8955797,83879,Western Europe,7.097,1.927,1.382,0.535,0.63,0.191,0.31
-Australia,Oceania,25688079,7692024,North America and ANZ,7.095,1.899,1.497,0.532,0.677,0.242,0.31
+Australia,Asia and Oceania and Oceania,25688079,7692024,North America and ANZ,7.095,1.899,1.497,0.532,0.677,0.242,0.31
 Canada,North America,38246108,9984670,North America and ANZ,6.961,1.881,1.484,0.541,0.656,0.218,0.364
 Republic of Ireland,Europe,5033165,69797,Western Europe,6.911,2.152,1.425,0.539,0.656,0.186,0.409
 United States of America,North America,331893745,9826675,North America and ANZ,6.894,1.98,1.46,0.39,0.557,0.21,0.172
@@ -23,12 +23,12 @@ France,Europe,67749632,643801,Western Europe,6.661,1.856,1.433,0.566,0.582,0.083
 Slovenia,Europe,2116972,20271,Central and Eastern Europe,6.65,1.815,1.539,0.532,0.707,0.144,0.113
 Costa Rica,North America,5044197,51100,Latin America and Caribbean,6.609,1.587,1.34,0.503,0.683,0.099,0.116
 Romania,Europe,19119880,238397,Central and Eastern Europe,6.589,1.726,1.28,0.423,0.631,0.044,0
-Singapore,Asia,5453566,719,Southeast Asia,6.587,2.168,1.354,0.607,0.66,0.17,0.561
-United Arab Emirates,Asia,9890400,83600,Middle East and North Africa,6.571,2.015,1.223,0.401,0.745,0.188,0.247
-Taiwan,Asia,23593794,36193,East Asia,6.535,1.89,1.372,0.492,0.562,0.067,0.178
+Singapore,Asia and Oceania,5453566,719,Southeast Asia and Oceania,6.587,2.168,1.354,0.607,0.66,0.17,0.561
+United Arab Emirates,Asia and Oceania,9890400,83600,Middle East and North Africa,6.571,2.015,1.223,0.401,0.745,0.188,0.247
+Taiwan,Asia and Oceania,23593794,36193,East Asia and Oceania,6.535,1.89,1.372,0.492,0.562,0.067,0.178
 Uruguay,South America,3456750,176215,Latin America and Caribbean,6.494,1.617,1.445,0.435,0.683,0.102,0.254
 Slovakia,Europe,5447247,49035,Central and Eastern Europe,6.469,1.731,1.544,0.472,0.494,0.128,0.022
-Saudi Arabia,Asia,33000000,2250000,Middle East and North Africa,6.463,1.861,1.37,0.351,0.682,0.093,0.17
+Saudi Arabia,Asia and Oceania,33000000,2250000,Middle East and North Africa,6.463,1.861,1.37,0.351,0.682,0.093,0.17
 Estonia,Europe,1330932,45339,Central and Eastern Europe,6.455,1.798,1.526,0.494,0.728,0.153,0.372
 Spain,Europe,47415750,505990,Western Europe,6.436,1.798,1.491,0.567,0.533,0.101,0.157
 Italy,Europe,59109668,302068,Western Europe,6.405,1.832,1.365,0.559,0.438,0.097,0.063
@@ -40,30 +40,30 @@ Panama,North America,4351267,74177,Latin America and Caribbean,6.265,1.714,1.402
 Poland,Europe,37747124,312683,Central and Eastern Europe,6.26,1.767,1.474,0.477,0.511,0.12,0.139
 Nicaragua,North America,6217581,130375,Latin America and Caribbean,6.259,1.109,1.292,0.385,0.66,0.148,0.218
 Latvia,Europe,1875757,64594,Central and Eastern Europe,6.213,1.737,1.505,0.405,0.58,0.107,0.071
-Bahrain,Asia,445373,785,Middle East and North Africa,6.173,1.883,1.269,0.389,0.748,0.199,0.138
+Bahrain,Asia and Oceania,445373,785,Middle East and North Africa,6.173,1.883,1.269,0.389,0.748,0.199,0.138
 Guatemala,North America,17263239,108889,Latin America and Caribbean,6.15,1.287,1.188,0.31,0.631,0.106,0.066
-Kazakhstan,Asia,19000988,2724900,Commonwealth of Independent States,6.144,1.664,1.491,0.389,0.628,0.136,0.149
+Kazakhstan,Asia and Oceania,19000988,2724900,Commonwealth of Independent States,6.144,1.664,1.491,0.389,0.628,0.136,0.149
 Serbia,Europe,6834326,88499,Central and Eastern Europe,6.144,1.552,1.343,0.424,0.617,0.246,0.081
 Cyprus,Europe,1244188,9242,Western Europe,6.13,1.824,1.224,0.58,0.455,0.104,0.05
-Japan,Asia,125681593,377972,East Asia,6.129,1.825,1.396,0.622,0.556,0.009,0.207
+Japan,Asia and Oceania,125681593,377972,East Asia and Oceania,6.129,1.825,1.396,0.622,0.556,0.009,0.207
 Croatia,Europe,3871833,56594,Central and Eastern Europe,6.125,1.727,1.455,0.475,0.5,0.087,0.003
 Brazil,South America,214326223,8515767,Latin America and Caribbean,6.125,1.454,1.25,0.387,0.558,0.131,0.137
 El Salvador,North America,6377853,20742,Latin America and Caribbean,6.122,1.278,1.044,0.383,0.713,0.079,0.222
 Hungary,Europe,9709891,93011,Central and Eastern Europe,6.041,1.754,1.519,0.435,0.501,0.105,0.065
 Argentina,South America,45808747,2780400,Latin America and Caribbean,6.024,1.59,1.388,0.427,0.587,0.088,0.082
 Honduras,North America,10062994,112492,Latin America and Caribbean,6.023,1.115,1.072,0.341,0.613,0.189,0.062
-Uzbekistan,Asia,34915100,448978,Commonwealth of Independent States,6.014,1.227,1.347,0.375,0.74,0.26,0.208
-Malaysia,Asia,32447385,330803,Southeast Asia,6.012,1.665,1.155,0.385,0.659,0.222,0.122
+Uzbekistan,Asia and Oceania,34915100,448978,Commonwealth of Independent States,6.014,1.227,1.347,0.375,0.74,0.26,0.208
+Malaysia,Asia and Oceania,32447385,330803,Southeast Asia and Oceania,6.012,1.665,1.155,0.385,0.659,0.222,0.122
 Portugal,Europe,10347892,92225,Western Europe,5.968,1.758,1.356,0.537,0.693,0.031,0.037
-South Korea,Asia,51744876,100295,East Asia,5.951,1.853,1.188,0.603,0.446,0.112,0.163
+South Korea,Asia and Oceania,51744876,100295,East Asia and Oceania,5.951,1.853,1.188,0.603,0.446,0.112,0.163
 Greece,Europe,10566531,131957,Western Europe,5.931,1.708,1.247,0.535,0.248,0.008,0.097
 Mauritius,Africa,1264613,2040,Sub-Saharan Africa,5.902,1.589,1.382,0.336,0.574,0.121,0.11
-Thailand,Asia,71601103,513120,Southeast Asia,5.843,1.515,1.344,0.461,0.624,0.291,0.013
-Mongolia,Asia,3409939,1564116,East Asia,5.84,1.379,1.494,0.244,0.425,0.239,0.058
-Kyrgyzstan,Asia,6691800,199951,Commonwealth of Independent States,5.825,1.061,1.439,0.417,0.735,0.234,0.018
+Thailand,Asia and Oceania,71601103,513120,Southeast Asia and Oceania,5.843,1.515,1.344,0.461,0.624,0.291,0.013
+Mongolia,Asia and Oceania,3409939,1564116,East Asia and Oceania,5.84,1.379,1.494,0.244,0.425,0.239,0.058
+Kyrgyzstan,Asia and Oceania,6691800,199951,Commonwealth of Independent States,5.825,1.061,1.439,0.417,0.735,0.234,0.018
 Moldova,Europe,2615199,33844,Central and Eastern Europe,5.819,1.425,1.302,0.375,0.61,0.093,0.02
-China,Asia,1412360000,9596961,East Asia,5.818,1.51,1.249,0.468,0.666,0.115,0.145
-Vietnam,Asia,96208984,331690,Southeast Asia,5.763,1.349,1.212,0.381,0.741,0.134,0.122
+China,Asia and Oceania,1412360000,9596961,East Asia and Oceania,5.818,1.51,1.249,0.468,0.666,0.115,0.145
+Vietnam,Asia and Oceania,96208984,331690,Southeast Asia and Oceania,5.763,1.349,1.212,0.381,0.741,0.134,0.122
 Paraguay,South America,6811297,406756,Latin America and Caribbean,5.738,1.428,1.427,0.392,0.678,0.148,0.062
 Montenegro,Europe,619211,13812,Central and Eastern Europe,5.722,1.537,1.385,0.424,0.563,0.17,0.061
 Jamaica,North America,2827695,10992,Latin America and Caribbean,5.703,1.305,1.329,0.411,0.587,0.079,0.039
@@ -74,21 +74,21 @@ Colombia,South America,51516562,1141748,Latin America and Caribbean,5.63,1.455,1
 Dominican Republic,North America,11117873,48671,Latin America and Caribbean,5.569,1.536,1.227,0.351,0.623,0.083,0.195
 Ecuador,South America,17797737,255587,Latin America and Caribbean,5.559,1.343,1.173,0.476,0.56,0.079,0.069
 Peru,South America,33715471,1285216,Latin America and Caribbean,5.526,1.39,1.153,0.499,0.549,0.073,0.027
-Philippines,Asia,109035343,343448,Southeast Asia,5.523,1.238,1.108,0.286,0.714,0.104,0.141
+Philippines,Asia and Oceania,109035343,343448,Southeast Asia and Oceania,5.523,1.238,1.108,0.286,0.714,0.104,0.141
 Bulgaria,Europe,6447710,110994,Central and Eastern Europe,5.466,1.635,1.457,0.408,0.557,0.106,0.013
-Nepal,Asia,29164578,147181,South Asia,5.36,0.979,1.027,0.281,0.567,0.215,0.104
-Armenia,Asia,2790974,29743,Central and Eastern Europe,5.342,1.466,1.134,0.443,0.551,0.053,0.16
-Tajikistan,Asia,9750064,143100,Commonwealth of Independent States,5.33,0.972,1.248,0.291,0.599,0.104,0.292
+Nepal,Asia and Oceania,29164578,147181,South Asia and Oceania,5.36,0.979,1.027,0.281,0.567,0.215,0.104
+Armenia,Asia and Oceania,2790974,29743,Central and Eastern Europe,5.342,1.466,1.134,0.443,0.551,0.053,0.16
+Tajikistan,Asia and Oceania,9750064,143100,Commonwealth of Independent States,5.33,0.972,1.248,0.291,0.599,0.104,0.292
 Algeria,Africa,43900000,2381741,Middle East and North Africa,5.329,1.353,1.298,0.409,0.252,0.073,0.152
-Hong Kong,Asia,7413100,2755,East Asia,5.308,1.951,1.201,0.702,0.407,0.123,0.39
+Hong Kong,Asia and Oceania,7413100,2755,East Asia and Oceania,5.308,1.951,1.201,0.702,0.407,0.123,0.39
 Albania,Europe,2811666,28748,Central and Eastern Europe,5.277,1.449,0.951,0.48,0.549,0.133,0.037
-Indonesia,Asia,275439000,1904570,Southeast Asia,5.277,1.384,1.169,0.314,0.663,0.422,0.038
+Indonesia,Asia and Oceania,275439000,1904570,Southeast Asia and Oceania,5.277,1.384,1.169,0.314,0.663,0.422,0.038
 South Africa,Africa,60142978,1221037,Sub-Saharan Africa,5.275,1.417,1.428,0.149,0.464,0.09,0.019
 Republic of the Congo,Africa,5260750,342000,Sub-Saharan Africa,5.267,0.921,0.665,0.145,0.464,0.134,0.136
 North Macedonia,Europe,2065092,25713,Central and Eastern Europe,5.254,1.498,1.171,0.408,0.515,0.207,0.02
 Venezuela,South America,28199867,912050,Latin America and Caribbean,5.211,1.596,1.257,0.341,0.369,0.205,0.084
-Laos,Asia,7425057,236800,Southeast Asia,5.111,1.232,0.853,0.257,0.715,0.185,0.162
-Georgia,Asia,3708610,69700,Central and Eastern Europe,5.109,1.477,0.947,0.366,0.539,0,0.201
+Laos,Asia and Oceania,7425057,236800,Southeast Asia and Oceania,5.111,1.232,0.853,0.257,0.715,0.185,0.162
+Georgia,Asia and Oceania,3708610,69700,Central and Eastern Europe,5.109,1.477,0.947,0.366,0.539,0,0.201
 Guinea,Africa,12717176,245857,Sub-Saharan Africa,5.072,0.844,0.776,0.072,0.369,0.204,0.102
 Ukraine,Europe,43792855,603550,Central and Eastern Europe,5.071,1.358,1.354,0.355,0.551,0.265,0.016
 Ivory Coast,Africa,27478249,322463,Sub-Saharan Africa,5.053,1.094,0.584,0.12,0.467,0.138,0.131
@@ -96,35 +96,35 @@ Gabon,Africa,2341179,267667,Sub-Saharan Africa,5.035,1.438,1.021,0.183,0.346,0.0
 Nigeria,Africa,211400708,923768,Sub-Saharan Africa,4.981,1.065,1.007,0.092,0.448,0.176,0.013
 Cameroon,Africa,27198628,475442,Sub-Saharan Africa,4.973,0.965,0.871,0.118,0.405,0.144,0.059
 Mozambique,Africa,32077072,801590,Sub-Saharan Africa,4.954,0.57,0.885,0,0.625,0.161,0.192
-Iraq,Asia,43533592,437072,Middle East and North Africa,4.941,1.281,0.953,0.324,0.351,0.134,0.038
-Palestinian National Authority,Asia,#FIELD!,6220,Middle East and North Africa,4.908,1.144,1.309,,0.416,0.065,0.067
+Iraq,Asia and Oceania,43533592,437072,Middle East and North Africa,4.941,1.281,0.953,0.324,0.351,0.134,0.038
+Palestinian National Authority,Asia and Oceania,#FIELD!,6220,Middle East and North Africa,4.908,1.144,1.309,,0.416,0.065,0.067
 Morocco,Africa,37076584,446550,Middle East and North Africa,4.903,1.236,0.535,0.337,0.54,0.013,0.085
-Iran,Asia,86758304,1648195,Middle East and North Africa,4.876,1.465,1.102,0.411,0.281,0.229,0.13
+Iran,Asia and Oceania,86758304,1648195,Middle East and North Africa,4.876,1.465,1.102,0.411,0.281,0.229,0.13
 Senegal,Africa,16876720,196722,Sub-Saharan Africa,4.855,0.943,0.727,0.231,0.519,0.142,0.06
 Mauritania,Africa,4614974,1030700,Sub-Saharan Africa,4.724,1.099,0.764,0.244,0.32,0.13,0.195
 Burkina Faso,Africa,20903278,274200,Sub-Saharan Africa,4.638,0.768,0.814,0.107,0.419,0.188,0.113
 Namibia,Africa,2530151,825615,Sub-Saharan Africa,4.631,1.289,1.126,0.145,0.383,0.069,0.071
-Turkey,Asia,84775404,783562,Middle East and North Africa,4.614,1.714,1.148,0.467,0.125,0.095,0.096
+Turkey,Asia and Oceania,84775404,783562,Middle East and North Africa,4.614,1.714,1.148,0.467,0.125,0.095,0.096
 Ghana,Africa,32833031,238535,Sub-Saharan Africa,4.605,1.101,0.756,0.197,0.526,0.211,0.035
-Pakistan,Asia,231402117,881913,South Asia,4.555,1.081,0.657,0.158,0.511,0.141,0.102
+Pakistan,Asia and Oceania,231402117,881913,South Asia and Oceania,4.555,1.081,0.657,0.158,0.511,0.141,0.102
 Niger,Africa,21477348,1267000,Sub-Saharan Africa,4.501,0.561,0.628,0.137,0.54,0.154,0.14
 Tunisia,Africa,12262946,163610,Middle East and North Africa,4.497,1.333,0.981,0.422,0.259,0.022,0.016
 Kenya,Africa,53005614,581309,Sub-Saharan Africa,4.487,1.051,0.881,0.19,0.418,0.291,0.055
-Sri Lanka,Asia,21444000,65610,South Asia,4.442,1.422,1.224,0.426,0.539,0.12,0.086
+Sri Lanka,Asia and Oceania,21444000,65610,South Asia and Oceania,4.442,1.422,1.224,0.426,0.539,0.12,0.086
 Uganda,Africa,45853778,241038,Sub-Saharan Africa,4.432,0.785,1.144,0.201,0.425,0.197,0.051
 Chad,Africa,15477751,1284000,Sub-Saharan Africa,4.397,0.622,0.962,0.043,0.393,0.255,0.088
-Cambodia,Asia,16005373,181035,Southeast Asia,4.393,1.025,1.024,0.283,0.768,0.176,0.051
+Cambodia,Asia and Oceania,16005373,181035,Southeast Asia and Oceania,4.393,1.025,1.024,0.283,0.768,0.176,0.051
 Benin,Africa,12996895,114763,Sub-Saharan Africa,4.374,0.924,0.242,0.124,0.481,0.114,0.253
-Myanmar,Asia,53370609,676577,Southeast Asia,4.372,1.032,1.125,0.269,0.46,0.4,0.194
-Bangladesh,Asia,169356251,147570,South Asia,4.282,1.133,0.513,0.355,0.617,0.139,0.165
+Myanmar,Asia and Oceania,53370609,676577,Southeast Asia and Oceania,4.372,1.032,1.125,0.269,0.46,0.4,0.194
+Bangladesh,Asia and Oceania,169356251,147570,South Asia and Oceania,4.282,1.133,0.513,0.355,0.617,0.139,0.165
 The Gambia,Africa,2639916,11300,Sub-Saharan Africa,4.279,0.761,0.614,0.174,0.286,0.332,0.033
 Mali,Africa,21904983,1240192,Sub-Saharan Africa,4.198,0.763,0.637,0.106,0.441,0.121,0.059
 Egypt,Africa,109262178,1010408,Middle East and North Africa,4.17,1.377,0.972,0.326,0.467,0.038,0.25
 Togo,Africa,7797694,56785,Sub-Saharan Africa,4.137,0.77,0.642,0.161,0.367,0.149,0.136
-Jordan,Asia,11148278,89341,Middle East and North Africa,4.12,1.292,0.98,0.438,0.517,0.056,0.173
+Jordan,Asia and Oceania,11148278,89341,Middle East and North Africa,4.12,1.292,0.98,0.438,0.517,0.056,0.173
 Ethiopia,Africa,120283026,1104300,Sub-Saharan Africa,4.091,0.793,1.114,0.25,0.451,0.283,0.101
 Liberia,Africa,5193416,111369,Sub-Saharan Africa,4.042,0.628,0.644,0.141,0.471,0.219,0.071
-India,Asia,1407563842,3287263,South Asia,4.036,1.159,0.674,0.252,0.685,0.175,0.111
+India,Asia and Oceania,1407563842,3287263,South Asia and Oceania,4.036,1.159,0.674,0.252,0.685,0.175,0.111
 Madagascar,Africa,25570895,587295,Sub-Saharan Africa,4.019,0.632,0.779,0.178,0.187,0.177,0.134
 Zambia,Africa,19610769,752618,Sub-Saharan Africa,3.982,0.914,0.89,0.095,0.545,0.189,0.08
 Tanzania,Africa,61741120,947303,Sub-Saharan Africa,3.694,0.836,0.787,0.214,0.607,0.234,0.269
@@ -134,5 +134,5 @@ Botswana,Africa,2291661,581737,Sub-Saharan Africa,3.435,1.471,1.041,0.087,0.48,0
 Democratic Republic of the Congo,Africa,95894118,2344858,Sub-Saharan Africa,3.207,0.531,0.784,0.105,0.375,0.183,0.068
 Zimbabwe,Africa,15178979,390757,Sub-Saharan Africa,3.204,0.758,0.881,0.069,0.363,0.112,0.117
 Sierra Leone,Africa,8420641,71740,Sub-Saharan Africa,3.138,0.67,0.54,0.092,0.371,0.193,0.051
-Lebanon,Asia,5592631,10452,Middle East and North Africa,2.392,1.417,0.476,0.398,0.123,0.061,0.027
-Afghanistan,Asia,40099462,652230,South Asia,1.859,0.645,0,0.087,0,0.093,0.059
+Lebanon,Asia and Oceania,5592631,10452,Middle East and North Africa,2.392,1.417,0.476,0.398,0.123,0.061,0.027
+Afghanistan,Asia and Oceania,40099462,652230,South Asia and Oceania,1.859,0.645,0,0.087,0,0.093,0.059
