@@ -1,13 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Histograms With Various Key Indicators Related to Happiness in 2023",
+    "title": "Bar Charts With Various Key Indicators Related to Happiness in 2023",
     "repeat": [
-        "happiness_score",
-        "gdp_per_capita",
-        "freedom_to_make_life_choices",
-        "social_support",
-        "healthy_life_expectancy",
-        "generosity"
+        "Happiness Score",
+        "GDP Per Capita",
+        "Freedom",
+        "Social Support",
+        "Life Expectancy",
+        "Generosity"
     ],
     "columns": 3,
     "spec": {
@@ -24,43 +24,86 @@
         "layer": [
             {
                 "data": {
-                    "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/WHR_2023.csv",
-                    "format": {}
+                    "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/WHR_2023.csv"
                 },
                 "mark": "bar",
                 "encoding": {
                     "x": {
-                        "bin": true,
-                        "field": {"repeat": "repeat"}
+                        "field": "Continent",
+                        "title": null
                     },
                     "y": {
-                        "aggregate": "count",
-                        "title": "Count of Countries"
-                    }
+                        "field": {
+                            "repeat": "repeat"
+                        },
+                        "aggregate": "mean"
+                    },
+                    "color": {
+                        "field": "Continent",
+                        "type": "nominal",
+                        "legend": null,
+                        "scale": {
+                            "domain": [
+                                "Africa",
+                                "Asia and Oceania",
+                                "Europe",
+                                "North America",
+                                "South America"
+                            ],
+                            "range": [
+                                "#ee4035",
+                                "#ffbf00",
+                                "#1C7C0E",
+                                "#377eb8",
+                                "#800080"
+                            ]
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.6
+                    },
+                    "tooltip": [
+                        {
+                            "field": "Continent",
+                            "type": "nominal"
+                        },
+                        {
+                            "field": {
+                                "repeat": "repeat"
+                            },
+                            "aggregate": "mean"
+                        }
+                    ]
                 }
             },
             {
                 "data": {
-                "values": [
-                {
-                "happiness_score": "Happiness Score",
-                "gdp_per_capita": "GDP Per Capita",
-                "freedom_to_make_life_choices": "Freedom to Make Life Choices",
-                "social_support": "Social Support",
-                "healthy_life_expectancy": "Healthy Life Expectancy",
-                "generosity": "Generosity"
-                }
-                ]
+                    "values": [
+                        {
+                            "Happiness Score": "Happiness Score",
+                            "GDP Per Capita": "GDP Per Capita",
+                            "Freedom": "Freedom",
+                            "Social Support": "Social Support",
+                            "Life Expectancy": "Life Expectancy",
+                            "Generosity": "Generosity"
+                        }
+                    ]
                 },
                 "mark": {
-                "type": "text",
-                "align": "right",
-                "baseline": "bottom",
-                "x": "width",
-                "y": 0
+                    "type": "text",
+                    "align": "right",
+                    "baseline": "bottom",
+                    "x": "width",
+                    "y": 0
                 },
-                "encoding": {"text": {"field": {"repeat": "repeat"}}}
+                "encoding": {
+                    "text": {
+                        "field": {
+                            "repeat": "repeat"
+                        }
+                    }
                 }
+            }
         ]
     }
 }
