@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/WHR_2023.csv"
+    },
+    "width": 400,
+    "height": 260,
+    "title": "Happiness Score",
+    "mark": "boxplot",
+    "encoding": {
+        "y": {
+            "field": "Continent",
+            "type": "nominal",
+            "title": null
+        },
+        "x": {
+            "field": "Happiness Score",
+            "type": "quantitative",
+            "scale": {
+                "zero": false
+            },
+            "title": "Happiness Score",
+            "axis": {
+                "grid": true,
+                "domain": false,
+                "ticks": false,
+                "offset": 10,
+                "labelAngle": 0
+            }
+        },
+        "size": {"value": 25},
+        "color": {
+            "field": "Continent",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+                "domain": [
+                    "Africa",
+                    "Asia and Oceania",
+                    "Europe",
+                    "North America",
+                    "South America"
+                ],
+                "range": [
+                    "#ee4035",
+                    "#ffbf00",
+                    "#1C7C0E",
+                    "#377eb8",
+                    "#800080"
+                ]
+            }
+        },
+        "opacity": {
+            "value": 0.6
+        },
+        "tooltip": [
+            {
+                "field": "Country",
+                "type": "nominal"
+            },
+            {
+                "field": "Happiness Score",
+                "type": "quantitative",
+                "title": "Happiness Score"
+            }
+        ]
+    }
+}

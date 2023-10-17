@@ -1,98 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>World Happiness in 2023</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
-  
+
   <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
     integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
+
   <!-- Google font -->
   <!-- 
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   -->
-  
+
 
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
 </head>
+
 <body>
 
   <div class="page">
     <!-- pure grid group -->
-    <div class="pure-g">
+    <div class="pure-g main_style2">
       <div class="pure-u-1-1">
-        <h1>World Happiness in 2023</h1>
-        <p>World Happiness Visualisations</p>
+        <h1>World Happiness</h1>
+        <p id="centered" p>
+          This dashboard provides a comprehensive view into World Happiness in 2023. Explore happiness scores, continent
+          comparisons, top-ranking countries, and factors influencing well-being. Dive into the global happiness
+          landscape.
+        </p>
       </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h2>World Hapiness</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+    <div class="pure-g main_style">
+      <div class="pure-u-1-3">
+        <div class="description">
+          <h2>World Happiness in 2023</h2>
+          <p>This choropleth map represents happiness scores using a gradient of green shades, with darker green
+            indicating higher scores and lighter green representing lower scores. Hover over any country to view its
+            happiness score.
+            <br><br>
+            Nordic European countries such as Finland, Norway, and Sweden appear in dark green on the map, signifying
+            that they have some of the highest happiness scores globally.
+            <br><br>
+            In contrast, African and Asian countries, such as Afghanistan and Sierra Leone, tend to appear in lighter
+            green on the map, indicating lower happiness scores. These regions often face challenges related to economic
+            hardship, political instability, and lower access to basic services, all of which can impact happiness and
+            life satisfaction.
+          </p>
         </div>
       </div>
-      <div class="pure-u-1-2">
+      <div class="pure-u-2-3">
         <div id="vis2" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
-    <div class="pure-g">
+    <div class="pure-g main_style">
       <div class="pure-u-1-2">
-        <div id="vis3" class="vis-container"></div>
+        <div class="description">
+          <h2>World Happiness per Continent</h2>
+          <p>
+            This box plot showcases global happiness disparities and diverse well-being levels across continents.
+            <br><br>
+            Europe stands out with the highest median happiness score and maximum score, closely followed by North
+            America and South America. The data of these continents is tightly clustered with minimal spread, reflecting
+            its high overall well-being. In contrast, Asia and Oceania exhibit more variation, exemplified by outliers.
+            Africa presents the lowest median happiness score and the widest spread, emphasizing the challenges faced by
+            many African nations in achieving well-being.
+          </p>
+        </div>
       </div>
       <div class="pure-u-1-2">
-        <div class="description description-right">
-          <h2>Happiness Rankings Throughout the Years</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. </p>
+        <div class="description">
+          <h2>Ranking of the Happiest Countries</h2>
+          <p>This bump chart represents the top 10 countries with the highest happiness scores from 2015 through to
+            2023.
+            <br><br>
+            Seven of these countries are European, as indicated in different shades of green. Most of these countries
+            are Nordic countries, known for their high living standards and quality of life.
+            <br><br>
+            New Zealand and Australia have satyed consistent within their rankings, with Canada dropping down four
+            places from 2015 to 2023. Each of these contries have had a happiness score of over 6.9 throughout the
+            years.
+          </p>
         </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis3" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h2>World Hapiness vs GDP Per Capita</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed.</p>
+    <div class="pure-g main_style">
+      <div class="pure-u-1-3">
+        <div class="description">
+          <h2>World Happiness vs GDP Per Capita</h2>
+          <p>This bubble chart highlights the correlation of higher GDP per Capita with higher happiness score. Each
+            circle represents a country, with a colour matching their continent and a bubble size representing its
+            population. 
+            <br><br>
+            Overall, European countries, represented by green bubbles, are in the top right corner indicating high GDP
+            per Capita and high happines score. Luxembourg is shown to have the highest GDP per Capita, and Finland is
+            shown to have the highest happiness score.
+            <br><br>
+            In the bottom left corner, there are primarily more African countries, indicated by red bubbles. Sierra Leone is seen to have the lowest GDP per Capita, and Afghanistan is seen to have the lowest happiness Score.
+            <br><br>
+            Hover over any bubble to see information about the country, its continent, happiness score, GDP per Capita and population. Select a continent you want to see in particular, and drag the slider to show countries with a population greater than what you have chosen.
+          </p>
         </div>
       </div>
-      <div class="pure-u-1-2">
+      <div class="pure-u-2-3">
         <div id="vis1" class="vis-container"></div>
       </div>
     </div>
     <!-- end pure grid group -->
 
     <!-- pure grid group -->
-    <div class="pure-g">
+    <div class="pure-g main_style">
       <div class="pure-u-1-1">
-        <div class="description description-left">
-          <h2>Various Key Indicators Related to Happiness in 2023</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed.</p>
+        <div class="description">
+          <h2>Various Key Indicators Related to Happiness</h2>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description">
+          <p>These small multiple bar charts represent indicators related to happiness. These factors include GDP per Capita, freedom, social support, generosity and life expectancy.
+            The scores for these categories were calculated using survey data.
+            <br><br>Notably, Europe scores highly in each category, having the highest mean value for GDP per Capita, social support and life expectancy. 
+            Conversely, North America and South America share similarities in their scores, especially when it comes to GDP per capita, social support, life expectancy and generosity. 
+           </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description">
+          <p>However, both continents record relatively lower generosity scores, highlighting an individualistic community. On the other hand, Africa, Asia and Oceania score highly in generosity. Asia scoring the highest underscores a profound sense of community support and sharing. 
+            Africa, while scoring the lowest in all other components, has a high score in generosity. This illustrates the strong collectivistic culture, compared to the individualistic culture in North and South America.
+          </p>
         </div>
       </div>
       <div class="pure-u-1-1">
@@ -101,7 +162,15 @@
     </div>
     <!-- end pure grid group -->
 
-    
+    <!-- pure grid group -->
+    <div class="pure-u-1-1">
+      <div class="description">
+        <p>Visualisation by Dilmi Fernando<br>Data: <a
+            href="https://www.kaggle.com/datasets/sazidthe1/global-happiness-scores-and-factors?select=WHR_2023.csv">World
+            Happiness Report up to 2023</a> Dataset from Kaggle</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
 
   </div>
 
@@ -110,6 +179,7 @@
     var specVis2 = "./choroplethmap.vg.json";
     var specVis3 = "./bumpchart.vg.json";
     var specVis4 = "./smallmultiples.vg.json";
+    var specVis5 = "./boxplot.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -127,9 +197,12 @@
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
   </script>
 
-  
-
 </body>
+
 </html>

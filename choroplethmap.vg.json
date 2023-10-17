@@ -1,14 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
+    "height": 350,
     "title": "World Happiness 2023",
     "data": {
         "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/js/ne_110m.topojson",
         "format": {
-          "type": "topojson",
-          "feature": "ne_110m_admin_0_countries"
+            "type": "topojson",
+            "feature": "ne_110m_admin_0_countries"
         }
-      },
+    },
     "projection": {
         "type": "equalEarth"
     },
@@ -61,7 +62,7 @@
                         },
                         "key": "Country",
                         "fields": [
-                            "happiness_score"
+                            "Happiness Score"
                         ]
                     }
                 }
@@ -71,12 +72,12 @@
             },
             "encoding": {
                 "color": {
-                    "field": "happiness_score",
+                    "field": "Happiness Score",
                     "type": "quantitative",
                     "scale": {
                         "type": "linear",
                         "range": [
-                            "#beedc9",
+                            "#FFFFFF",
                             "#7dc98f",
                             "#409454",
                             "#054d16"
@@ -91,7 +92,7 @@
                         "title": "Country"
                     },
                     {
-                        "field": "happiness_score",
+                        "field": "Happiness Score",
                         "type": "quantitative",
                         "title": "Happiness Score"
                     }

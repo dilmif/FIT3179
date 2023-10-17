@@ -1,6 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
+    "height": 400,
     "title": "Happiness Score vs GDP Per Capita in 2023",
     "data": {
         "url": "https://raw.githubusercontent.com/dilmif/FIT3179/main/data/WHR_2023.csv"
@@ -12,31 +13,21 @@
                 "input": "select",
                 "options": [
                     null,
-                    "Central and Eastern Europe",
-                    "Commonwealth of Independent States",
-                    "East Asia",
-                    "Latin America and Caribbean",
-                    "Middle East and North Africa",
-                    "North America and ANZ",
-                    "South Asia",
-                    "Southeast Asia",
-                    "Sub-Saharan Africa",
-                    "Western Europe"
+                    "Africa",
+                    "Asia and Oceania",
+                    "Europe",
+                    "North America",
+                    "South America"
                 ],
                 "labels": [
                     "Show All",
-                    "Central and Eastern Europe",
-                    "Commonwealth of Independent States",
-                    "East Asia",
-                    "Latin America and Caribbean",
-                    "Middle East and North Africa",
-                    "North America and ANZ",
-                    "South Asia",
-                    "Southeast Asia",
-                    "Sub-Saharan Africa",
-                    "Western Europe"
+                    "Africa",
+                    "Asia and Oceania",
+                    "Europe",
+                    "North America",
+                    "South America"
                 ],
-                "name": "Region Selection: "
+                "name": "Continent Selection: "
             }
         },
         {
@@ -45,7 +36,7 @@
             "bind": {
                 "input": "range",
                 "min": 0,
-                "max": 100000000,
+                "max": 150000000,
                 "step": 1000000,
                 "name": "Minimum Population: "
             }
@@ -53,7 +44,7 @@
     ],
     "transform": [
         {
-            "filter": "region_selection == null || datum.region == region_selection"
+            "filter": "region_selection == null || datum.Continent == region_selection"
         },
         {
             "filter": "datum.Population > Population_Above"
@@ -61,12 +52,12 @@
     ],
     "encoding": {
         "x": {
-            "field": "gdp_per_capita",
+            "field": "GDP Per Capita",
             "type": "quantitative",
             "title": "GDP Per Capita"
         },
         "y": {
-            "field": "happiness_score",
+            "field": "Happiness Score",
             "type": "quantitative",
             "title": "Happiness Score"
         }
@@ -92,8 +83,8 @@
                             50,
                             150,
                             200,
-                            300,
-                            400
+                            350,
+                            500
                         ]
                     },
                     "legend": {
@@ -101,38 +92,27 @@
                     }
                 },
                 "color": {
-                    "field": "region",
+                    "field": "Continent",
                     "type": "nominal",
                     "scale": {
                         "domain": [
-                            "Central and Eastern Europe",
-                            "Commonwealth of Independent States",
-                            "East Asia",
-                            "Latin America and Caribbean",
-                            "Middle East and North Africa",
-                            "North America and ANZ",
-                            "South Asia",
-                            "Southeast Asia",
-                            "Sub-Saharan Africa",
-                            "Western Europe"
+                            "Africa",
+                            "Asia and Oceania",
+                            "Europe",
+                            "North America",
+                            "South America"
                         ],
                         "range": [
-                            "#27B0BD",
-                            "#ff7f00",
-                            "#a6cee3",
-                            "#cec7c4",
-                            "#a65628",
+                            "#ee4035",
+                            "#ffbf00",
+                            "#1C7C0E",
                             "#377eb8",
-                            "#ffbac0",
-                            "#ba9d46",
-                            "#e41a1c",
-                            "#1C7C0E"
+                            "#800080"
                         ]
                     },
-                    "title": "Region"
+                    "title": "Continent"
                 },
                 "opacity": {
-                    
                     "value": 0.6
                 },
                 "tooltip": [
@@ -141,16 +121,23 @@
                         "type": "nominal"
                     },
                     {
-                        "field": "happiness_score",
-                        "type": "quantitative",
-                        "format": ",",
-                        "title": "Happiness Score"
+                        "field": "Continent",
+                        "type": "nominal"
                     },
                     {
-                        "field": "gdp_per_capita",
+                        "field": "Happiness Score",
                         "type": "quantitative",
-                        "format": ",",
-                        "title": "GDP Per Capita"
+                        "format": ","
+                    },
+                    {
+                        "field": "GDP Per Capita",
+                        "type": "quantitative",
+                        "format": ","
+                    },
+                    {
+                        "field": "Population",
+                        "type": "quantitative",
+                        "format": ","
                     }
                 ]
             }
@@ -163,37 +150,50 @@
                 "dx": -12,
                 "fontSize": 11.5,
                 "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {
+                    "field": "Country",
+                    "type": "nominal"
                 },
-                "encoding": {
-                "text": {"field": "Country", "type": "nominal"},
-                "color": {"value": "black"},
+                "color": {
+                    "value": "black"
+                },
                 "opacity": {
                     "condition": {
-                        "test": "datum['Country'] == 'Australia' || datum['Country'] == 'China' || datum['Country'] == 'India' || datum['Country'] == 'Sri Lanka' || datum['Country'] == 'Spain' || datum['Country'] == 'Afghanistan' || datum['Country'] == 'Singapore'",
+                        "test": "datum['Country'] == 'Afghanistan' || datum['Country'] == 'Sierra Leone' || datum['Country'] == 'Finland' || datum['Country'] == 'Luxembourg'",
                         "value": 1
-                        },
-                        "value": 0
-                        },
-                        "tooltip": [
-                            {
-                                "field": "Country",
-                                "type": "nominal"
-                            },
-                            {
-                                "field": "happiness_score",
-                                "type": "quantitative",
-                                "format": ",",
-                                "title": "Happiness Score"
-                            },
-                            {
-                                "field": "gdp_per_capita",
-                                "type": "quantitative",
-                                "format": ",",
-                                "title": "GDP Per Capita"
-                            }
-                        ]
-                }
-
+                    },
+                    "value": 0
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Continent",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Happiness Score",
+                        "type": "quantitative",
+                        "format": ",",
+                        "title": "Happiness Score"
+                    },
+                    {
+                        "field": "GDP Per Capita",
+                        "type": "quantitative",
+                        "format": ",",
+                        "title": "GDP Per Capita"
+                    },
+                    {
+                        "field": "Population",
+                        "type": "quantitative",
+                        "format": ","
+                    }
+                ]
+            }
         }
     ]
 }
